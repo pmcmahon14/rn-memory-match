@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     },
     levelTitle: {
         fontSize: 12,
+        fontFamily: 'Racing Sans One',
         color: 'black'
     }
 });
