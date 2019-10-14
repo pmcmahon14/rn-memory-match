@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native';
 
 const Statistics = props => {
     return (
@@ -9,7 +9,13 @@ const Statistics = props => {
         <Text style={styles.stat}>Matches{"\n"}0</Text>
         <Text style={styles.stat}>Accuracy{"\n"}0</Text>
         <Text style={styles.stat}>Wins{"\n"}0</Text>
-        <Text style={styles.reset}>Reset</Text>
+        <View style={styles.reset}>
+            <TouchableOpacity style={styles.button} onPress={() => {}}>
+                <View>
+                    <Text style={styles.buttonText}>RESET</Text>
+                </View>
+            </TouchableOpacity>
+        </View>
     </View>
     )
 };
@@ -23,19 +29,28 @@ const styles = StyleSheet.create({
     menu: {
         width: '16%',
         backgroundColor: 'lightgray',
+        fontFamily: 'Racing Sans One',
         textAlign: 'center'
     },
     stat: {
         width: '15%',
         backgroundColor: 'gray',
+        fontFamily: 'Racing Sans One',
         marginLeft: '1%',
         textAlign: 'center'
     },
     reset: {
         width: '16%',
-        backgroundColor: 'red',
         marginLeft: '1%',
+    },
+    button: {
+        backgroundColor: 'red',
+        height: 40
+    },
+    buttonText: {
+        fontFamily: 'Racing Sans One',
         textAlign: 'center'
+
     }
 });
 

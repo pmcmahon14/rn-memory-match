@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     },
     timer: {
         fontSize: 12,
+        fontFamily: 'Racing Sans One',
         color: 'black'
     }
 });
