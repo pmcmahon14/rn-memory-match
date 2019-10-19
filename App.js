@@ -6,6 +6,7 @@ import {AppLoading} from 'expo';
 import Statistics from './components/Statistics';
 import Level from './components/Level';
 import Timer from './components/Timer';
+import Card from './components/Card';
 
 const fetchFonts = () => {
     return Font.loadAsync({
@@ -31,7 +32,7 @@ export default function App() {
           <Statistics/>
           <Level title='Daytona Driver/Driver'/>
           <Timer title='0.000/50'/>
-          <Text>Gameboard</Text>
+          <Card/>
       </View>
     );
 }
