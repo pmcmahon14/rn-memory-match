@@ -1,20 +1,20 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native';
 
+import Menu from './Menu';
+
 const Statistics = props => {
     return (
     <View style={styles.statBar}>
-        <Text style={styles.menu}>Menu</Text>
+        <View style={styles.menu}>
+            <Menu/>
+        </View>
         <Text style={styles.stat}>Attempts{"\n"}0</Text>
         <Text style={styles.stat}>Matches{"\n"}0</Text>
         <Text style={styles.stat}>Accuracy{"\n"}0</Text>
         <Text style={styles.stat}>Wins{"\n"}0</Text>
         <View style={styles.reset}>
-            <TouchableOpacity style={styles.button} onPress={() => {}}>
-                <View>
-                    <Text style={styles.buttonText}>RESET</Text>
-                </View>
-            </TouchableOpacity>
+            <Button title='RESET' style={styles.button} onPress={() => {}}/>
         </View>
     </View>
     )
@@ -45,7 +45,9 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: 'red',
-        height: 40
+        height: 40,
+        fontFamily: 'Racing Sans One',
+        textAlign: 'center'
     },
     buttonText: {
         fontFamily: 'Racing Sans One',
