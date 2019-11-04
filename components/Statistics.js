@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 import Menu from './Menu';
 
@@ -14,7 +14,9 @@ const Statistics = props => {
         <Text style={styles.stat}>Accuracy{"\n"}0</Text>
         <Text style={styles.stat}>Wins{"\n"}0</Text>
         <View style={styles.reset}>
-            <Button title='RESET' style={styles.button} onPress={() => {}}/>
+            <TouchableOpacity style={styles.button} onPress={() => {}}>
+                <Text style={styles.buttonText}>RESET</Text>
+            </TouchableOpacity>
         </View>
     </View>
     )
